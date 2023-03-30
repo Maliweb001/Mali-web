@@ -1,0 +1,88 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins'-sans-serif;
+}
+
+body{
+    background-color: #fff; 
+}
+
+Header{
+    Position: fixed;
+    margin: 18;
+    top: 0;
+    left: 0;
+    width: 98%;
+    padding: 10px 50px;
+    display: flex;    
+    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    Z-inded: 90;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-item: center;
+    min-height: 100vh;
+    background: url(src="mali.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    Font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a{
+    Position: relative;
+    font-size: 1em;
+    color: #fff;
+    Text-decoration: none;
+    Font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: ";
+    position: absolute;
+    left: 5;
+    bottom: 0px;
+    Width: 100%;
+    hieght: 3px;
+    background: #fff;
+    transforms-original: right;
+    Transit: transform;
+    border-radius: 5px;
+    transform-scaleX: (0);
+    transition: transform.5s;
+}
+.navigation a:hover::after{
+    transform-scaleX: (0);
+    Transition-origin: left;
+}
+
+.navigation .btnlogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    Font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 5s;
+}
+
+.navigation .btnlogin-popup:hover{
+    background: #fff;
+    color: green;
+}
